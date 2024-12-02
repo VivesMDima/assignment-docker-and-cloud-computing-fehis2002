@@ -1,0 +1,6 @@
+{
+    "name": "Mall API - Test",
+    "db": {
+        "name": "MallAPI_Test"
+    }
+}

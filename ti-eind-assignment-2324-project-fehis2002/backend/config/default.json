@@ -1,0 +1,7 @@
+{
+    "name": "Mall API",
+    "db": {
+        "name": "MallAPI_Development"
+    },
+    "jwtPrivateKey": "mallAPI_jwtPrivateKey"
+}

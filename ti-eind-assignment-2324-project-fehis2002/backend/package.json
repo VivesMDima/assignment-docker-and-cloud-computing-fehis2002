@@ -1,0 +1,33 @@
+{
+  "name": "ti-eind-assignment-2324-project-fehis2002",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/5ykzvLV4)",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "debug": "nodemon --inspect app.js",
+    "swagger": "node ./swagger.js",
+    "test": "mocha"
+  },
+  "author": "Fabian Ehis",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "config": "^3.3.11",
+    "express": "^4.18.3",
+    "joi": "^17.12.2",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.4.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "chai": "^4.2.0",
+    "mocha": "^10.4.0",
+    "supertest": "^7.0.0"
+  }
+}

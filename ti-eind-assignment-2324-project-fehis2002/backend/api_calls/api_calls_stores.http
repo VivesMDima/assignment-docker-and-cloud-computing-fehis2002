@@ -1,0 +1,53 @@
+# STORES CALLS #
+
+@base_url = http://34.22.159.109:3000/api/stores
+@storeId = 6642fcf9dea6fae5df21f235
+@authToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjVmNGUwZjA0ZTc0YTY5ODJjZmE2MDMiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNzE3NTIxOTgwLCJleHAiOjE3MTc1MjU1ODB9.KqljPo7oT7JXnJ-_lckAmj89YHe4MLIohrLpkmSgJY8
+@adminToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjYwOWI0ZmUyM2UxOGYzYzgxODcxM2EiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MTc2MjM0NDIsImV4cCI6MTcxNzYyNzA0Mn0.GhRrWSNl_vdosgSGu_Jgix-sMOVVnHNfr3DkEqviXVE
+
+
+get {{base_url}}
+
+###
+
+get {{base_url}}/{{storeId}}
+
+###
+
+post {{base_url}}
+x-auth-token: {{authToken}}
+Content-Type: application/json
+
+# {
+#     name: string (required, min 5 characters, max 75 characters),
+#     type: string (required, min 5 characters, max 50 characters)
+# }
+
+{
+    "name": "H&M",
+    "type": "Clothing"
+}
+
+
+###
+
+
+
+put {{base_url}}/{{storeId}}
+x-auth-token: {{authToken}}
+Content-Type: application/json
+
+# {
+#     name: string (required, min 5 characters, max 75 characters),
+#     type: string (required, min 5 characters, max 50 characters)
+# }
+
+{
+    "name": "C&A",
+    "type": "clothing"
+}
+
+###
+
+delete {{base_url}}/{{storeId}}
+x-auth-token: {{adminToken}}

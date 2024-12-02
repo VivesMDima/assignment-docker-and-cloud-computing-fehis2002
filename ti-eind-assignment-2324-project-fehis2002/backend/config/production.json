@@ -1,0 +1,6 @@
+{
+    "name": "Mall API - Production",
+    "db": {
+        "name": "MallAPI_Production"
+    }
+}

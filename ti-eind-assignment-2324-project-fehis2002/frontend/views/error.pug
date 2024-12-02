@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title Error #{statusCode}
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8d7da;
+        color: #721c24;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .error-container {
+        text-align: center;
+        border: 1px solid #f5c6cb;
+        background-color: #f8d7da;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+  body
+    .error-container
+      h1  #{statusCode} #{status}
+      p #{message}

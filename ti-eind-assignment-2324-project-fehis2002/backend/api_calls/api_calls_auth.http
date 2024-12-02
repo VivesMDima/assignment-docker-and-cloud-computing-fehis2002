@@ -1,0 +1,40 @@
+# AUTH CALLS #
+@base_URL = http://34.22.159.109:3000/api/auth
+@adminEmail = fabian.ehis@student.vives.com
+@adminPassword = password123
+
+
+
+
+post {{base_URL}}
+Content-Type: application/json
+
+# {
+#     email: string (required, min 5 characters, max 255 characters, valid email format),
+#     password: string (required, min 5 characters, max 255 characters)
+# }
+
+{
+   "email": "gebruiker5@gmail.com",
+   "password": "password"
+}
+
+
+####
+
+post {{base_URL}}
+Content-Type: application/json
+
+# { ADMIN
+#     email: string (required, min 5 characters, max 255 characters, valid email format),
+#     password: string (required, min 5 characters, max 255 characters)
+# }
+
+{
+   "email": "fabian.ehis@student.vives.be",
+   "password": "password123"
+}
+
+
+
+
